@@ -7,19 +7,27 @@ using System.IO;
 
 namespace BabyCarrot.Tools
 {
+    public enum LogType { Daily, Monthly}
+
     public class LogManager
     {
         private string _path;
 
         #region Constructors
-        public LogManager(string path)
+        public LogManager(string path, LogType logType, string prefix, string postfix)
         {
             _path = path;
-            _SetLogPath();
+            _SetLogPath(logType,prefix, postfix);
+        }
+
+        public LogManager(string prefix, string postfix)
+            : this(Path.Combine(Application.Root, "Log"), LogType.Daily, prefix, postfix)
+        {
+
         }
 
         public LogManager()
-            : this(System.IO.Path.Combine(Application.Root, "Log"))
+            : this(System.IO.Path.Combine(Application.Root, "Log"),LogType.Daily,null,null)
         {
             //_path = System.IO.Path.Combine(Application.Root,"Log");
             //_SetLogPath();
@@ -27,13 +35,39 @@ namespace BabyCarrot.Tools
         #endregion
 
         #region Methods
-        private void _SetLogPath()
+        private void _SetLogPath(LogType logType, string prefix, string postfix)
         {
+            string path = String.Empty;
+            string name = String.Empty;
+
+            switch (logType)
+            {
+                case LogType.Daily:
+                    path = String.Format(@"{0}\{1}\", DateTime.Now.Year, DateTime.Now.ToString("MM"));
+                    name = DateTime.Now.ToString("yyyyMMdd");
+                    break;
+                case LogType.Monthly:
+                    path = String.Format(@"{0}\", DateTime.Now.Year);
+                    name = DateTime.Now.ToString("yyyyMM");
+                    break;
+
+            }
+
+            _path = Path.Combine(_path, path);
+
             if (!Directory.Exists(_path))
                 Directory.CreateDirectory(_path);
 
-            string logFile = DateTime.Now.ToString("yyyyMMdd") + ".txt";
-            _path = Path.Combine(_path, logFile);
+            if (!String.IsNullOrEmpty(prefix))
+                name = prefix + name;
+            if (!String.IsNullOrEmpty(postfix))
+                name = name + postfix;
+
+            name = name + ".txt";
+
+            //string logFile = DateTime.Now.ToString("yyyyMMdd") + ".txt";
+            //_path = Path.Combine(_path, logFile);
+            _path = Path.Combine(_path, name);
         }
 
         public void Write(string data)

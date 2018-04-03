@@ -1,0 +1,12 @@
+20180404 08:09:24	[Begin Processing]........
+Processing: 020180404 08:09:25	Done: 0
+Processing: 120180404 08:09:25	Done: 1
+Processing: 220180404 08:09:26	Done: 2
+Processing: 320180404 08:09:26	Done: 3
+Processing: 420180404 08:09:27	Done: 4
+Processing: 520180404 08:09:27	Done: 5
+Processing: 620180404 08:09:28	Done: 6
+Processing: 720180404 08:09:28	Done: 7
+Processing: 820180404 08:09:29	Done: 8
+Processing: 920180404 08:09:29	Done: 9
+20180404 08:09:29	[End Processing].......
