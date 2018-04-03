@@ -1,0 +1,6 @@
+D:\inflearn_projects\BabyCarrot\BabyCarrot\bin\Debug\BabyCarrot.dll
+D:\inflearn_projects\BabyCarrot\BabyCarrot\bin\Debug\BabyCarrot.pdb
+D:\inflearn_projects\BabyCarrot\BabyCarrot\obj\Debug\BabyCarrot.csprojResolveAssemblyReference.cache
+D:\inflearn_projects\BabyCarrot\BabyCarrot\obj\Debug\BabyCarrot.csproj.CoreCompileInputs.cache
+D:\inflearn_projects\BabyCarrot\BabyCarrot\obj\Debug\BabyCarrot.dll
+D:\inflearn_projects\BabyCarrot\BabyCarrot\obj\Debug\BabyCarrot.pdb

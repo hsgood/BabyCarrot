@@ -1,0 +1,10 @@
+D:\inflearn_projects\BabyCarrot\BabyCarrotTest\bin\Debug\BabyCarrotTest.exe.config
+D:\inflearn_projects\BabyCarrot\BabyCarrotTest\bin\Debug\BabyCarrotTest.exe
+D:\inflearn_projects\BabyCarrot\BabyCarrotTest\bin\Debug\BabyCarrotTest.pdb
+D:\inflearn_projects\BabyCarrot\BabyCarrotTest\bin\Debug\BabyCarrot.dll
+D:\inflearn_projects\BabyCarrot\BabyCarrotTest\bin\Debug\BabyCarrot.pdb
+D:\inflearn_projects\BabyCarrot\BabyCarrotTest\obj\Debug\BabyCarrotTest.csprojResolveAssemblyReference.cache
+D:\inflearn_projects\BabyCarrot\BabyCarrotTest\obj\Debug\BabyCarrotTest.csproj.CoreCompileInputs.cache
+D:\inflearn_projects\BabyCarrot\BabyCarrotTest\obj\Debug\BabyCarrotTest.csproj.CopyComplete
+D:\inflearn_projects\BabyCarrot\BabyCarrotTest\obj\Debug\BabyCarrotTest.exe
+D:\inflearn_projects\BabyCarrot\BabyCarrotTest\obj\Debug\BabyCarrotTest.pdb
