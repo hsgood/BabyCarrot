@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BabyCarrot.Tools;
+using BabyCarrot.Extensions;
 
 namespace BabyCarrotTest
 {
@@ -11,6 +12,7 @@ namespace BabyCarrotTest
     {
         static void Main(string[] args)
         {
+            /**
             //LogManager log = new LogManager();
             LogManager log = new LogManager(null,"_BabyCarrotText");
 
@@ -31,6 +33,25 @@ namespace BabyCarrotTest
             //Console.WriteLine(BabyCarrot.Tools.Application.Root);
             //Console.WriteLine(Application.Root);
             //Console.ReadLine();
+            **/
+
+            //LogManager log = new LogManager();
+            //log.WriteConsole("test");   //확장메소드 호출
+
+            string temp = "12:25";
+            Console.WriteLine("IsNumeric  ? : " + temp.IsNumeric());
+            Console.WriteLine("IsDateTime ? : " + temp.IsDateTime());
+        }
+
+
+    }
+
+    public static class ExtensionText
+    {
+        public static void WriteConsole(this LogManager log, string data)
+        {
+            log.Write(data);
+            Console.Write(data);
         }
     }
 }
