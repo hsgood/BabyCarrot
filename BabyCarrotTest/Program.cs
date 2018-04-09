@@ -41,6 +41,15 @@ namespace BabyCarrotTest
             string temp = "12:25";
             Console.WriteLine("IsNumeric  ? : " + temp.IsNumeric());
             Console.WriteLine("IsDateTime ? : " + temp.IsDateTime());
+
+            DateTime tmdate;
+            tmdate = new DateTime(2018, 02, 01);
+            Console.WriteLine(tmdate.Year +"/"+ tmdate.Month + "의 첫번째 날은 : " + tmdate.FirstDateOfMonth());
+            Console.WriteLine(tmdate.Year +"/"+ tmdate.Month + "의 마지막 날은 : " + tmdate.LastDateOfMonth());
+
+            //email 
+            
+
         }
 
 
